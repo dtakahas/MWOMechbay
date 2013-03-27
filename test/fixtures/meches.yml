@@ -1,0 +1,647 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  variant_name: COM-1B
+  chassis_name: Commando
+  weight_class: Light
+  head:
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 210
+  energy_hardpoints: 3
+  ballistic_hardpoints: 0
+  missile_hardpoints: 1
+  total_tonnage: 25
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+two:
+  id: 2
+  variant_name: COM-1D
+  chassis_name: Commando
+  weight_class: Light
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 210
+  energy_hardpoints: 2
+  ballistic_hardpoints: 0
+  missile_hardpoints: 2
+  total_tonnage: 25
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+three:
+  id: 3
+  variant_name: COM-2D
+  chassis_name: Commando
+  weight_class: Light
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 210
+  energy_hardpoints: 1
+  ballistic_hardpoints: 0
+  missile_hardpoints: 3
+  total_tonnage: 25
+  ecm: true
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+four:
+  id: 4
+  variant_name: COM-3A
+  chassis_name: Commando
+  weight_class: Light
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 210
+  energy_hardpoints: 2
+  ballistic_hardpoints: 0
+  missile_hardpoints: 2
+  total_tonnage: 25
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+five:
+  id: 5
+  variant_name: JR7-D
+  chassis_name: Jenner
+  weight_class: Light
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 300
+  energy_hardpoints: 4
+  ballistic_hardpoints: 0
+  missile_hardpoints: 2
+  total_tonnage: 35
+  ecm: false
+  jump_jets: true
+  ams: left_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+six:
+  id: 6
+  variant_name: JR7-F
+  chassis_name: Jenner
+  weight_class: Light
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 1
+  min_engine: 100
+  max_engine: 300
+  energy_hardpoints: 6
+  ballistic_hardpoints: 0
+  missile_hardpoints: 0
+  total_tonnage: 35
+  ecm: false
+  jump_jets: true
+  ams: left_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+seven:
+  id: 7
+  variant_name: JR7-K
+  chassis_name: Jenner
+  weight_class: Light
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 1
+  min_engine: 100
+  max_engine: 300
+  energy_hardpoints: 4
+  ballistic_hardpoints: 0
+  missile_hardpoints: 1
+  total_tonnage: 35
+  ecm: false
+  jump_jets: true
+  ams: left_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+eight:
+  id: 8
+  variant_name: RVN-2X
+  chassis_name: Raven
+  weight_class: Light
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 3
+  min_engine: 100
+  max_engine: 245
+  energy_hardpoints: 4
+  ballistic_hardpoints: 0
+  missile_hardpoints: 1
+  total_tonnage: 35
+  ecm: false
+  jump_jets: false
+  ams: left_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+nine:
+  id: 9
+  variant_name: RVN-3L
+  chassis_name: Raven
+  weight_class: Light
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 3
+  min_engine: 100
+  max_engine: 295
+  energy_hardpoints: 3
+  ballistic_hardpoints: 0
+  missile_hardpoints: 2
+  total_tonnage: 35
+  ecm: true
+  jump_jets: false
+  ams: left_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+ten:
+  id: 10
+  variant_name: RVN-4X
+  chassis_name: Raven
+  weight_class: Light
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 245
+  energy_hardpoints: 2
+  ballistic_hardpoints: 2
+  missile_hardpoints: 1
+  total_tonnage: 35
+  ecm: false
+  jump_jets: true
+  ams: left_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+eleven:
+  id: 11
+  variant_name: CDA-2A
+  chassis_name: Cicada
+  weight_class: Medium
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 1
+  min_engine: 100
+  max_engine: 340
+  energy_hardpoints: 6
+  ballistic_hardpoints: 0
+  missile_hardpoints: 0
+  total_tonnage: 40
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+twelve:
+  id: 12
+  variant_name: CDA-2B
+  chassis_name: Cicada
+  weight_class: Medium
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 340
+  energy_hardpoints: 5
+  ballistic_hardpoints: 0
+  missile_hardpoints: 0
+  total_tonnage: 40
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+thirteen:
+  id: 13
+  variant_name: CDA-3C
+  chassis_name: Cicada
+  weight_class: Medium
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 340
+  energy_hardpoints: 1
+  ballistic_hardpoints: 4
+  missile_hardpoints: 0
+  total_tonnage: 40
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+fourteen:
+  id: 14
+  variant_name: CDA-3M
+  chassis_name: Cicada
+  weight_class: Medium
+  head: 
+  head_slots: 1
+  center_torso: 1M
+  ct_slots: 2
+  left_torso:
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 340
+  energy_hardpoints: 4
+  ballistic_hardpoints: 1
+  missile_hardpoints: 0
+  total_tonnage: 40
+  ecm: true
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+fifteen:
+  id: 15
+  variant_name: CN9-A
+  chassis_name: Centurion
+  weight_class: Medium
+  head: 
+  head_slots: 1
+  center_torso: 2E
+  ct_slots: 2
+  left_torso: 3M
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 
+  la_slots: 8
+  right_arm: 1B
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 260
+  energy_hardpoints: 2
+  ballistic_hardpoints: 1
+  missile_hardpoints: 3
+  total_tonnage: 50
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+sixteen:
+  id: 16
+  variant_name: CN9-AL
+  chassis_name: Centurion
+  weight_class: Medium
+  head: 
+  head_slots: 1
+  center_torso: 2E
+  ct_slots: 2
+  left_torso: 2M
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 
+  la_slots: 8
+  right_arm: 2E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 260
+  energy_hardpoints: 4
+  ballistic_hardpoints: 0
+  missile_hardpoints: 2
+  total_tonnage: 50
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+seventeen:
+  id: 17
+  variant_name: CN9-D
+  chassis_name: Centurion
+  weight_class: Medium
+  head: 
+  head_slots: 1
+  center_torso: 2E
+  ct_slots: 2
+  left_torso: 2M
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 
+  la_slots: 8
+  right_arm: 2B
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 390
+  energy_hardpoints: 2
+  ballistic_hardpoints: 2
+  missile_hardpoints: 2
+  total_tonnage: 50
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+eighteen:
+  id: 18
+  variant_name: YEN-LO-WANG
+  chassis_name: Centurion
+  weight_class: Medium
+  head: 
+  head_slots: 1
+  center_torso: 2E
+  ct_slots: 2
+  left_torso: 
+  lt_slots: 12
+  right_torso: 1AMS
+  rt_slots: 12
+  left_arm: 
+  la_slots: 8
+  right_arm: 2B
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 3
+  min_engine: 100
+  max_engine: 280
+  energy_hardpoints: 2
+  ballistic_hardpoints: 2
+  missile_hardpoints: 0
+  total_tonnage: 50
+  ecm: false
+  jump_jets: false
+  ams: right_torso
+  cbill_cost: 1
+  mc_cost: 1
+
+nineteen:
+  id: 19
+  variant_name: HBK-4G
+  chassis_name: Hunchback
+  weight_class: Medium
+  head: 1E
+  head_slots: 1
+  center_torso: 
+  ct_slots: 2
+  left_torso: 1AMS
+  lt_slots: 12
+  right_torso: 3B
+  rt_slots: 12
+  left_arm: 1E
+  la_slots: 8
+  right_arm: 1E
+  ra_slots: 8
+  left_leg: 
+  ll_slots: 2
+  right_leg: 
+  rl_slots: 2
+  module_slots: 2
+  min_engine: 100
+  max_engine: 260
+  energy_hardpoints: 3
+  ballistic_hardpoints: 3
+  missile_hardpoints: 0
+  total_tonnage: 50
+  ecm: false
+  jump_jets: false
+  ams: left_torso
+  cbill_cost: 1
+  mc_cost: 1

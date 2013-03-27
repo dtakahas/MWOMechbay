@@ -1,0 +1,6 @@
+<span style="color:orange">Upgrades</span></br>
+
+    <%= check_box_tag "DoubleHeatSinks[]", :checked => false %> Double Heat Sinks</br>
+    <%= check_box_tag "EndoSteel[]", :checked => false %> Endo Steel</br>
+    <%= check_box_tag "FerroFibrousArmor[]", :checked => false %> Ferro Fibrous Armor</br>
+    <%= check_box_tag "Artemis[]", :checked => false %> Artemis</br>

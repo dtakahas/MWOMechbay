@@ -1,0 +1,218 @@
+<script>
+function changeChassis(value) {
+    
+    var chassis = document.getElementsByName("chassis");
+
+    for (i=1;i<chassis.length;i++) {
+    	document.getElementById(i).style.display='none';
+    }
+	
+    document.getElementById(value).style.display='block';
+
+    document.getElementById('tonnage_used').innerHTML= 0;
+}
+
+function changeEngine(value) {
+
+}
+
+function selectItem(id) {
+
+    var element = document.getElementById(id)
+    if (element.className.match("selected"))
+    {
+    	element.className= null;
+    	element.style.backgroundColor = null;
+    }
+    else
+    {
+    	if (document.getElementsByClassName("selected")[0]) 
+    	{
+    		item=document.getElementsByClassName("selected")[0]
+    		item.className = null;
+            item.style.backgroundColor = null;
+            element.style.backgroundColor = 'orange';
+            element.className="selected";
+    	}
+    	else
+    	{
+    		element.style.backgroundColor = 'orange';
+            element.className="selected";
+    	}
+    	
+    	
+    }
+
+}
+
+
+function placeItem(slot) {
+    element=document.getElementById(slot)
+    item=document.getElementsByClassName("selected")[0]
+    element.innerHTML= item.innerHTML;
+    equipped_items=document.getElementsByName("item_weight")
+    t = 0
+    ITEM_LIST_TONS=6.5
+    for (var i = 0; i < equipped_items.length; i++)
+    {
+    	t = t + Number(equipped_items[i].value)
+    }
+
+    document.getElementById("tonnage_used").innerHTML = t - ITEM_LIST_TONS;
+
+
+    // item.className = null;
+    // item.style.backgroundColor = null;
+}
+</script>
+
+<body>
+<h1>WELCOME TO MWO MECHBAY</h1>
+<h2>CHOOSE A CHASSIS: <%= select_tag(:chassis, options_for_select(@mech_options), :onchange => "changeChassis(this.options[this.selectedIndex].value)") %></h2>
+
+</br>
+TONNAGE EQUIPPED:
+<div id="tonnage_used">
+	0
+</div>
+</br>
+
+<% @mechs.each do |mech| %>
+
+	
+<div class="tables" id=<%= mech.id %> name="chassis">
+<div id="sidebar">
+<span style="color:orange"><big><%= mech.variant_name %></big></span></br>
+<%= mech.weight_class %> | <%= mech.chassis_name %></br>
+		Hardpoints: <%= mech.energy_hardpoints %>E | <%= mech.ballistic_hardpoints %>B | <%= mech.missile_hardpoints %>M</br>
+		<%= mech.total_tonnage %> Tons</br>
+		
+		<div>
+			</br><span style="color:orange">Engine</span></br><%= select_tag(:engine, options_for_select([["No Engine", 0], ["100 Standard", 1], ["110 Standard", 2]]), :onchange => "changeEngine(this.options[this.selectedIndex].value)") %>
+
+		</div>
+
+		<div class="upgrades">
+		</br><%= render "upgrades" %>
+	    </div>
+
+	    </br><span style="color:orange">Equipment Capabilities</span></br>
+	    <small>
+	    <% if mech.jump_jets %>Jump Jets</br><%end%>
+	    <% if mech.ecm %>Guardian ECM</br><%end%>
+	    <% if mech.ams %>Anti Missile System<%end%>
+	</small>
+</div>
+
+<div id="main">
+	<div class="head">
+		<table>
+		<th>Head <span style="color:white"><% if mech.head %>[<%= mech.head %>]<% end %></span></th>
+		<% mech.head_slots.times do |i| %>
+		<tr>
+			<td id="head_<%= mech.variant_name %>" onclick="placeItem(this.id)">Empty Slot</td>
+		</tr>
+		<% end %>
+		</table>
+	</div>
+	<div class="center_torso">
+		<table>
+		<th>Center Torso <span style="color:white"><% if mech.center_torso %>[<%= mech.center_torso %>]<% end %></span></th>
+		<% mech.ct_slots.times do |i| %>
+		<tr>
+			<td id="ct<%= i%>_<%= mech.variant_name %>" onclick="placeItem(this.id)">Empty Slot</td>
+		</tr>
+		<% end %>
+		</table>
+	</div>
+	<div class="left_torso">
+		<table>
+		<th>Left Torso <span style="color:white"><% if mech.left_torso %>[<%= mech.left_torso %>]<% end %></span></th>
+		<% mech.lt_slots.times do |i| %>
+		<tr>
+			<td id="lt<%= i%>_<%= mech.variant_name %>" onclick="placeItem(this.id)">Empty Slot</td>
+		</tr>
+		<% end %>
+		</table>
+	</div>
+	<div class="right_torso">
+		<table>
+		<th>Right Torso <span style="color:white"><% if mech.right_torso %>[<%= mech.right_torso %>]<% end %></span></th>
+		<% mech.rt_slots.times do |i| %>
+		<tr>
+			<td id="rt<%= i%>_<%= mech.variant_name %>" onclick="placeItem(this.id)">Empty Slot</td>
+		</tr>
+		<% end %>
+		</table>
+	</div>
+	<div class="left_arm">
+		<table>
+		<th>Left Arm <span style="color:white"><% if mech.left_arm %>[<%= mech.left_arm %>]<% end %></span></th>
+		<% mech.la_slots.times do |i| %>
+		<tr>
+			<td id="la<%= i%>_<%= mech.variant_name %>" onclick="placeItem(this.id)">Empty Slot</td>
+		</tr>
+		<% end %>
+		</table>
+	</div>
+	<div class="right_arm">
+		<table>
+		<th>Right Arm <span style="color:white"><% if mech.right_arm %>[<%= mech.right_arm %>]<% end %></span></th>
+		<% mech.ra_slots.times do |i| %>
+		<tr>
+			<td id="ra<%= i%>_<%= mech.variant_name %>" onclick="placeItem(this.id)">Empty Slot</td>
+		</tr>
+		<% end %>
+		</table>
+	</div>
+	<div class="left_leg">
+		<table>
+		<th>Left Leg <span style="color:white"><% if mech.left_leg %>[<%= mech.left_leg %>]<% end %></span></th>
+		<% mech.ll_slots.times do |i| %>
+		<tr>
+			<td id="ll<%= i%>_<%= mech.variant_name %>" onclick="placeItem(this.id)">Empty Slot</td>
+		</tr>
+		<% end %>
+		</table>
+	</div>
+	<div class="right_leg">
+		<table>
+		<th>Right Leg <span style="color:white"><% if mech.right_leg %>[<%= mech.right_leg %>]<% end %></span></th>
+		<% mech.rl_slots.times do |i| %>
+		<tr>
+			<td id="rl<%= i%>_<%= mech.variant_name %>" onclick="placeItem(this.id)">Empty Slot</td>
+		</tr>
+		<% end %>
+		</table>
+	</div>
+	<div class="modules">
+		<table>
+		<th>Modules</th>
+		<% mech.module_slots.times do |i| %>
+		<tr>
+			<td id="mod<%= i%>_<%= mech.variant_name %>" onclick="placeItem(this.id)">Empty Slot</td>
+		</tr>
+		<% end %>
+		</table>
+	</div>
+
+
+</div>
+</div>
+
+			<% end %>
+
+<div id="item_menu">
+  <table>
+  	<th>SELECT ITEM</th>
+  	<% @items.each do |item| %>
+  	<tr>
+  		<td id="item_<%= item.id%>" onclick="selectItem(this.id)"><%= item.name %><% if item.weight %> [ <small><%= item.weight %> tons</small> ] <%= hidden_field_tag 'item_weight', item.weight %><%end%><%= hidden_field_tag 'item_slots', item.slots %></td>
+  	</tr>
+  	<% end %>
+  </table>
+</div>
+
+</body>
+
+

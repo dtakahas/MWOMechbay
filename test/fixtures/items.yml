@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+zero:
+  id: 0
+  name: Empty Slot
+  item_type: 
+  slots: 1
+  damage: 
+  weight: 
+  cost: 0
+  heat: 0
+  dps: 0
+  hps: 0
+
+one:
+  id: 1
+  name: Small Laser
+  item_type: energy
+  slots: 1
+  damage: 3.0
+  weight: 0.5
+  cost: 1
+  heat: 2.0
+  dps: 1.0
+  hps: 1.09
+
+two:
+  id: 2
+  name: Medium Laser
+  item_type: energy
+  slots: 1
+  damage: 6.0
+  weight: 1.0
+  cost: 1
+  heat: 4.0
+  dps: 1.25
+  hps: 1.00
+
+three:
+  id: 3
+  name: Large Laser
+  item_type: energy
+  slots: 2
+  damage: 9.0
+  weight: 5.0
+  cost: 1
+  heat: 7.0
+  dps: 2.12
+  hps: 1.65
